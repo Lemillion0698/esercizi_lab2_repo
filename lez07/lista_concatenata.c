@@ -9,6 +9,7 @@ typedef struct n Node;
 
 
 int main(){
+    
     Node* head = NULL; // lista vuota
 
     Node elem;
@@ -28,10 +29,12 @@ int main(){
     head=&elem2;
 
     Node* l=head;
+    
     while(l != NULL){
         printf("%d ", l->val);
         l=l->next;
     }
+
     printf("\n");
     return 0;
 }
