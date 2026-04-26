@@ -20,10 +20,12 @@
 int main(){
     int fd;
     /*tento di aprire in sola lettura*/
-    if(( fd = open("studio_processi.md", O_RDONLY)) == -1){
+    if(( fd = open("studio_processi.md", O_EXCL)) == -1){
         perror("studio_processi.md, in apertura");
         exit(EXIT_FAILURE); // termina
     }
+
+    printf("fd = %d\n", fd);
 
     return EXIT_SUCCESS;
 }

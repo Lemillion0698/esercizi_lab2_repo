@@ -1,6 +1,6 @@
 COMPILATORE = gcc
 CFLAGS = -Wall -pedantic -std=c11
-NAME = prova
+NAME = lettura
 LIBS = -lpthread -lrt
 
 .PHONY: default clean run
