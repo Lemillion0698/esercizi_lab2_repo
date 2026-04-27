@@ -20,6 +20,7 @@
 int main(){
     int fd;
     /*tento di aprire in sola lettura*/
+    
     if(( fd = open("studio_processi.md", O_EXCL)) == -1){
         perror("studio_processi.md, in apertura");
         exit(EXIT_FAILURE); // termina

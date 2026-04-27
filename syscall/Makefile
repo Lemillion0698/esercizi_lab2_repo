@@ -1,6 +1,6 @@
 COMPILATORE = gcc
 CFLAGS = -Wall -pedantic -std=c11
-NAME = lettura
+NAME = processo
 LIBS = -lpthread -lrt
 
 .PHONY: default clean run
@@ -17,7 +17,7 @@ $(NAME).o: $(NAME).c
 
 # target di utilità (run e clean)
 run: $(NAME)
-	./$(NAME)
+	./$(NAME) 
 
 clean: 
 	rm -f $(NAME) $(NAME).o

@@ -40,6 +40,7 @@ int main(){
         perror("prova.c: errore in chiusura"); 
         exit(EXIT_FAILURE);
     }
+    
     printf("\nQuello che c'è nel buffer: \n%s\n", buf);
 
     return EXIT_SUCCESS;
