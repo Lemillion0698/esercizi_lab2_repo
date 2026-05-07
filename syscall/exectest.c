@@ -10,7 +10,9 @@ int main(void) {
     
     /* Sostituisce lo spazio di indirizzamento corrente con l'eseguibile /bin/echo */
     execl("/bin/echo", "Mbayanga", "the", "lazy", "dogs", (char*)NULL);  // primo argomento è il file eseguibile da caricare sul disco: "/bin/echo"
-    // "echo" è il nome del nuovo programma (che decido io di dare) lanciato dal programma sorgente (exectest.c) dopo la  execl
+    // Il parametro "echo" è il nome assegnato al nuovo programma (/bin/echo) che, tramite la chiamata execl, prende definitivamente il posto del processo in esecuzione.
+    // NULL perché ho usata execl con "l" alla fine, cioè gli argoment sono passati come una lista, con NULL alla fine
+
     /* Se il programma arriva a leggere questa riga, significa che execl ha fallito */
     perror("execl"); 
     return 1; // perché se non riesce la exec*() a lanciare un nuovo programma, segnalerebbe un errore

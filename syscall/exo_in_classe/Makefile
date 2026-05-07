@@ -1,6 +1,6 @@
 COMPILATORE = gcc
 CFLAGS = -Wall -pedantic -std=c11
-NAME = processo_test
+NAME = eso1_gemini
 LIBS = -lpthread -lrt
 
 .PHONY: default clean run
