@@ -30,8 +30,8 @@ int main() {
 
         // ---- SCEGLI QUALE METODO SPERIMENTARE (Decommenta uno dei due) ----
         
-        sperimenta_dup2(pfd[1]);
-        // sperimenta_dup_tradizionale(pfd[1]);
+        //sperimenta_dup2(pfd[1]);
+        sperimenta_dup_tradizionale(pfd[1]);
         
         // ------------------------------------------------------------------
 

@@ -1,6 +1,6 @@
 COMPILATORE = gcc
 CFLAGS = -Wall -pedantic -std=c11
-NAME = eso_1_1
+NAME = test_anonimo
 LIBS = -lpthread -lrt
 
 .PHONY: default clean run
@@ -18,6 +18,7 @@ $(NAME).o: $(NAME).c
 # target di utilità (run e clean)
 run: $(NAME)
 	./$(NAME)
+#./$(NAME) /mio_semaforo_test
 
 clean: 
 	rm -f $(NAME) $(NAME).o
